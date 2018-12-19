@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBRETRO_2048
+	bool "Libretro 2048"
+	help
+	  2048 Game Core

@@ -1,0 +1,22 @@
+config BR2_PACKAGE_RETROARCH
+	bool "RetroArch"
+	select BR2_PACKAGE_SDL
+	select BR2_PACKAGE_SDL_GFX
+	select BR2_PACKAGE_SDL_IMAGE
+	select BR2_PACKAGE_SDL_NET
+	select BR2_PACKAGE_SDL_TTF
+	select BR2_PACKAGE_SDL_MIXER
+	select BR2_PACKAGE_LIBRETRO_2048
+	help
+		RetroArch is a frontend for emulators, game engines and media players.
+
+		It enables you to run classic games on a wide range of
+		computers and consoles through its slick graphical
+		interface. Settings are also unified so configuration
+		is done once and for all.
+
+		RetroArch has advanced features like shaders, netplay,
+		rewinding, next-frame response times, and more!
+
+
+		http://www.retroarch.com/

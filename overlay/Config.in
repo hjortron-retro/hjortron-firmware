@@ -1,0 +1,2 @@
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/hjortron/Config.in"
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/Config.in"

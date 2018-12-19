@@ -1,0 +1,50 @@
+--- a/dev/null	1970-01-01 01:00:00.000000000 +0100
++++ b/Makefile.buildroot	2018-12-20 01:14:17.894309258 +0100
+@@ -0,0 +1,38 @@
++include version.all
++
++TARGET := retroarch_buildroot
++
++DEBUG              = 0
++WHOLE_ARCHIVE_LINK = 0
++
++OBJ = \
++   griffin/griffin.o \
++   gfx/drivers/sdl_gfx.o \
++   audio/drivers/sdl_audio.o \
++   input/drivers/sdl_input.o \
++   input/drivers_joypad/sdl_joypad.o
++
++INCDIRS = -I. -I./libretro-common/include -I./deps -I$(STAGING_DIR)/usr/include/SDL
++
++LIBS = -lSDL -ludev -ldl -lm -lpthread -lrt -lopenal
++DEFINES = -std=gnu99 -DHAVE_THREADS -DHAVE_GETOPT_LONG=1 -DHAVE_GRIFFIN -DRARCH_INTERNAL
++DEFINES += -DHAVE_SDL -DHAVE_SDL_IMAGE -DHAVE_DYNAMIC -DHAVE_RPNG -DHAVE_RJPEG -DWANT_ZLIB
++DEFINES += -DHAVE_UDEV -DHAVE_OVERLAY -DHAVE_OPENAL -DHAVE_ZLIB -D__linux__
++DEFINES += -DAHVE_LIBRETODB -DHAVE_RGUI -DHAVE_MENU
++DEFINES += $(INCDIRS)
++
++ifeq ($(DEBUG), 1)
++   OPTIMIZE_LV	:= -O0 -g
++else
++   OPTIMIZE_LV	:= -O3
++endif
++
++all: $(TARGET)
++
++CFLAGS := $(OPTIMIZE_LV) $(DEFINES)
++
++$(TARGET): $(OBJ)
++	$(CC) -o $@ $(OBJ) $(LDFLAGS) $(LDDIRS) $(LIBS)
++
++%.o: %.S
++	$(CC) $(CFLAGS) -c -o $@ $<
++
++%.o: %.c config.h
++	$(CC) $(CFLAGS) -c -o $@ $<
++
++clean:
++	rm -f $(TARGET)
++	rm -f $(OBJ)
++
++.PHONY: clean

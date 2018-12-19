@@ -1,0 +1,4 @@
+# RetroArch & libretro game cores
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/retroarch/Config.in"
+
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/cores/Config.in"
