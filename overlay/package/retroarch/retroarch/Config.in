@@ -11,6 +11,8 @@ config BR2_PACKAGE_RETROARCH
 	select BR2_PACKAGE_LIBRETRO_2048
 	select BR2_PACKAGE_LIBRETRO_PICODRIVE
 	select BR2_PACKAGE_LIBRETRO_LUTRO
+	select BR2_PACKAGE_LIBRETRO_SCUMMVM
+	select BR2_PACKAGE_LIBRETRO_YABAUSE
 
 	help
 		RetroArch is a frontend for emulators, game engines and media players.

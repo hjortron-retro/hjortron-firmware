@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBRETRO_YABAUSE
+	bool "Libretro Yabause"
+	help
+	  Sega Saturn emulator

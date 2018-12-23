@@ -1,0 +1,6 @@
+config BR2_PACKAGE_LIBRETRO_SCUMMVM
+	bool "Libretro ScummVM"
+	help
+	  ScummVM is a program which allows you to run certain classic
+	  graphical point-and-click adventure games, provided you already have
+	  their data files.

@@ -1,3 +1,5 @@
 source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/cores/libretro-2048/Config.in"
 source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/cores/libretro-picodrive/Config.in"
 source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/cores/libretro-lutro/Config.in"
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/cores/libretro-scummvm/Config.in"
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/cores/libretro-yabause/Config.in"
