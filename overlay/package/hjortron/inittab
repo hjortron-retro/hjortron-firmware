@@ -18,7 +18,7 @@ null::sysinit:/bin/ln -sf /proc/self/fd/2 /dev/stderr
 # Start X
 #
 console::once:/usr/bin/hjortron
-console::askfirst:/sbin/shutdown
+console::askfirst:/bin/busybox poweroff
 tty2::respawn:/sbin/getty 38400 tty2
 
 #
