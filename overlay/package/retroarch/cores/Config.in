@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/cores/libretro-2048/Config.in"
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/retroarch/cores/libretro-picodrive/Config.in"

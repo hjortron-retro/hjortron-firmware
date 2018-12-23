@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBRETRO_PICODRIVE
+	bool "Libretro Picodrive"
+	help
+	  Sega Mega Drive, Mega-CD, 32X emulator

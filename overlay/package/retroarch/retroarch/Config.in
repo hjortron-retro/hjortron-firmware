@@ -6,7 +6,11 @@ config BR2_PACKAGE_RETROARCH
 	select BR2_PACKAGE_SDL_NET
 	select BR2_PACKAGE_SDL_TTF
 	select BR2_PACKAGE_SDL_MIXER
+
+	# Cores
 	select BR2_PACKAGE_LIBRETRO_2048
+	select BR2_PACKAGE_LIBRETRO_PICODRIVE
+
 	help
 		RetroArch is a frontend for emulators, game engines and media players.
 
