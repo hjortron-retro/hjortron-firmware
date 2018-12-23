@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBRETRO_LUTRO
+	bool "Libretro Lutro"
+	help
+	  Experimental Lua game framework for libretro, following the LÖVE API.

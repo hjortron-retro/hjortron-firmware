@@ -10,6 +10,7 @@ config BR2_PACKAGE_RETROARCH
 	# Cores
 	select BR2_PACKAGE_LIBRETRO_2048
 	select BR2_PACKAGE_LIBRETRO_PICODRIVE
+	select BR2_PACKAGE_LIBRETRO_LUTRO
 
 	help
 		RetroArch is a frontend for emulators, game engines and media players.
