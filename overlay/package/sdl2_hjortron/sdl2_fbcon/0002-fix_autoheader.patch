@@ -1,0 +1,12 @@
+diff --git a/configure.in b/configure.in
+index abdb897..0dfd374 100644
+--- a/configure.in
++++ b/configure.in
+@@ -1662,6 +1662,7 @@ AC_HELP_STRING([--enable-video-x11], [use X11 video driver [[default=yes]]]),
+                 fi
+                 ;;
+         esac
++        AC_DEFINE([SDL_VIDEO_DRIVER_X11_XINPUT2_SUPPORTS_MULTITOUCH], [], [Description])
+         AC_PATH_X
+         AC_PATH_XTRA
+         if test x$have_x = xyes; then

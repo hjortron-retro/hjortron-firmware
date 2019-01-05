@@ -1,0 +1,3 @@
+# Minimalistic build of SDL2 with fbcon video driver for hjortron
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/sdl2_hjortron/sdl2_fbcon/Config.in"
+source "$BR2_EXTERNAL_HJORTRON_PATH/package/sdl2_hjortron/sdl2_ttf_fbcon/Config.in"

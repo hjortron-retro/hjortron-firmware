@@ -1,0 +1,14 @@
+config BR2_PACKAGE_SDL2_FBCON
+	bool "sdl2_fbcon"
+	depends on !BR2_STATIC_LIBS
+	select BR2_PACKAGE_ALSA_LIB
+	help
+	  Simple DirectMedia Layer 2 - SDL2 is a library that allows
+	  programs portable low level access to a video framebuffer,
+	  audio output, mouse, and keyboard. It is not compatible with
+	  SDL1.
+
+	  http://www.libsdl.org/
+
+comment "sdl2 needs a toolchain w/ dynamic library"
+	depends on BR2_STATIC_LIBS

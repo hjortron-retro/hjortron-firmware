@@ -1,5 +1,5 @@
 config BR2_PACKAGE_HJORTRON
-	bool "RetroArch"
-	select BR2_PACKAGE_RETROARCH
+	bool "Hjortron system package"
+	select BR2_PACKAGE_HJORTRON_FRONTEND
 	help
 		Hjortron system

@@ -2,4 +2,4 @@
 
 export SDL_NOMOUSE=1
 
-retroarch -L /usr/lib/libretro --fullscreen --menu
+/usr/bin/hjortron-frontend
